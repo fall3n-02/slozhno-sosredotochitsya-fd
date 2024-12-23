@@ -3,3 +3,78 @@
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
+
+.header {
+  display: grid;
+  padding: 10px;
+  background-image: url(../images/cover-image-dark.png);
+  background-position: center;
+  grid-template: repeat(5, mincontent) / 1fr;
+}
+
+.header__theme-menu {
+  justify-self: end;
+  margin-block-start: 39px;
+}
+
+.header__theme-menu-button {
+  border: 0;
+  color: var(--accent-color);
+  font-size: 18px;
+  background-color: transparent;
+}
+
+.main-title {
+  margin-block-end: 55px;
+  color: var(--title-color);
+  font-weight: bold;
+  font-size: 116px;
+  line-height: 95.7px;
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.main-subtitle {
+  margin-block-end: 31px;
+  color: var(--dark-text);
+  font-weight: bold;
+}
+
+.title-decor {
+  background-color: var(--accent-color);
+}
+
+.rec {
+  position: absolute;
+  top: 10px;
+  right: 19px;
+  color: var(--accent-color);
+  font-size: 18px;
+}
+
+.rec::after {
+  content: "";
+  display: inline-block;
+  margin-inline-start: 10px;
+  border-radius: 100%;
+  box-shadow: 0 0 4px 2px var(--accent-color);
+  background-color: var(--accent-color);
+  block-size: 9px;
+  inline-size: 9px;
+}
+
+.top-decoration-lines {
+  display: block;
+  justify-self: end;
+  border-inline-end: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--accent-color);
+  block-size: 25px;
+  inline-size: 25px;
+}
+
+.bottom-decoration-lines {
+  display: block;
+  border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--accent-color);
+  block-size: 25px;
+  inline-size: 25px;
+}
