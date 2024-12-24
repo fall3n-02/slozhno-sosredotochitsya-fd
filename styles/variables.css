@@ -4,7 +4,16 @@
 */
 
 :root {
-  --dark-text: #000028;
+  --bg-color: #000028;
+  --subtitle-text-color: #000028;
   --title-color: #DB00FF;
   --accent-color: #FF0070;
+  --bg-image: url("../images/cover-image-dark.png");
+  --regular-text-color: #F1B2CE;
+  --content-padding: 10px;
+  --content-margin-block-start: 40px;
+  --sections-gap: 50px;
+  --content-gap-m: 20px;
+  --content-gap-s: 10px;
+  --header__theme-menu-margin: 39px;
 }

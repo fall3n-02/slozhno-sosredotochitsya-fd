@@ -2,25 +2,33 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-color: var(--bg-color);
 }
+
 
 .header {
   display: grid;
-  padding: 10px;
+  padding: var(--content-padding);
   background-image: url(../images/cover-image-dark.png);
+  background-attachment: fixed;
+  background-size: cover;
   background-position: center;
-  grid-template: repeat(5, mincontent) / 1fr;
+  grid-template: repeat(5, min-content) / 1fr;
 }
 
 .header__theme-menu {
   justify-self: end;
-  margin-block-start: 39px;
+  margin-block-start: var(--header__theme-menu-margin);
+}
+
+.header__theme-menu-item {
+  margin-block-end: var(--content-gap-s);
 }
 
 .header__theme-menu-button {
   border: 0;
   color: var(--accent-color);
-  font-size: 18px;
+  text-transform: lowercase;
   background-color: transparent;
 }
 
@@ -35,7 +43,7 @@
 
 .main-subtitle {
   margin-block-end: 31px;
-  color: var(--dark-text);
+  color: var(--subtitle-text-color);
   font-weight: bold;
 }
 
@@ -77,4 +85,66 @@
   border-block-end: 1px solid var(--accent-color);
   block-size: 25px;
   inline-size: 25px;
+}
+
+.content {
+  display: grid;
+  grid-template: repeat(4, min-content) / 1fr;
+  gap: var(--sections-gap);
+  margin-block-start: var(--content-margin-block-start);
+  color: var(--regular-text-color);
+  padding: var(--content-padding);
+}
+
+.content-title {
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+.content-subtitle {
+  font-weight: bold;
+  color: var(--subtitle-text-color);
+}
+
+.content_section {
+  display: grid;
+  grid-template: repeat(3, min-content) / 1fr;
+}
+
+.content_section h2,
+.content_section p {
+  margin-block-end: var(--content-gap-m);
+}
+
+.content-subtitle_subtitle,
+.content_section h3 {
+  margin-block-end: var(--content-gap-s);
+}
+
+.content-subtitle_subtitle {
+  color: var(--subtitle-text-color);
+}
+
+.content-images {
+  display: grid;
+  grid-template: repeat(5, min-content) / 1fr;
+  gap: var(--content-gap-s)
+}
+
+.image {
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+.footer {
+  display: grid;
+  grid-template: min-content 1fr min-content / 1fr;
+  block-size: 647px;
+  padding: var(--content-padding);
+}
+
+.footer-title {
+  text-shadow: 2px 2px 0 var(--accent-color);
+  justify-self: center;
+  align-self: center;
 }
