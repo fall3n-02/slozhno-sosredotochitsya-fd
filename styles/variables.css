@@ -11,9 +11,28 @@
   --bg-image: url("../images/cover-image-dark.png");
   --regular-text-color: #F1B2CE;
   --content-padding: 10px;
-  --content-margin-block-start: 40px;
+  --header__theme-menu-margin: clamp(40px, 5.2vw, 147px);
+  --main-title-margin-block-end: 55px;
+  --main-subtitle-margin-block-end: clamp(31px, 4vw, 89px);
+  --content-margin-block: 40px;
   --sections-gap: 50px;
   --content-gap-m: 20px;
   --content-gap-s: 10px;
-  --header__theme-menu-margin: 39px;
+  --rec-position-top: 10px;
+  --rec-position-right: 19px;
+}
+
+@media (width >= 768px) {
+  :root {
+    --content-padding: 20px;
+    --main-title-margin-block-end: 162px;
+    --main-subtitle-margin-block-end: 138px;
+    --content-margin-block: 60px;
+    --sections-gap: 80px;
+    --content-gap-m: 20px;
+    --content-gap-s: 10px;
+    --header__theme-menu-margin: 147px;
+    --rec-position-top: 20px;
+    --rec-position-right: 29px;
+  }
 }
