@@ -24,7 +24,7 @@
     --title-color: #FFC2E6;
     --accent-color: #FF8DCB;
     --bg-image: url("../images/cover-image-light.png");
-    --regular-text-color: var(--subtitle-text-color);  
+    --regular-text-color: var(--subtitle-text-color);
   }
 }
 
@@ -36,6 +36,6 @@
 .theme-light .rec,
 .theme-light .rec::after,
 .theme-light .top-decoration-lines,
-.theme-light .bottom-decoration-lines{
+.theme-light .bottom-decoration-lines {
   display: none;
 }
