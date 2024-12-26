@@ -7,16 +7,16 @@
 
 
 .header {
-  display: grid;
   position: relative;
-  grid-template: min-content 1fr min-content / 1fr;
+  display: grid;
   height: 100vh;
   min-height: 668px;
   padding: var(--content-padding);
   background-image: url(../images/cover-image-dark.png);
-  background-attachment: fixed;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  grid-template: min-content 1fr min-content / 1fr;
 }
 
 .header__theme-menu {
@@ -36,20 +36,20 @@
 }
 
 .main-title {
+  align-self: center;
   color: var(--title-color);
   font-weight: bold;
   font-size: 116px;
   line-height: 95.7px;
   text-shadow: 4px 4px 0 var(--accent-color);
-  align-self: center;
 }
 
 .main-subtitle {
+  justify-self: end;
   width: var(--main-subtitle-width);
+  margin: var(--main-subtitle-margin);
   color: var(--subtitle-text-color);
   font-weight: bold;
-  justify-self: end;
-  margin: var(--main-subtitle-margin);
 }
 
 .title-decor {
@@ -99,21 +99,21 @@
 
 .content {
   display: grid;
-  grid-template: repeat(4, min-content) / 1fr;
   gap: var(--sections-gap);
-  color: var(--regular-text-color);
   padding: var(--content-padding);
+  color: var(--regular-text-color);
+  grid-template: repeat(4, min-content) / 1fr;
 }
 
 .content-title {
   width: clamp(236px, 30.2vw, 315px);
-  font-weight: bold;
   color: var(--accent-color);
+  font-weight: bold;
 }
 
 .content-subtitle {
-  font-weight: bold;
   color: var(--subtitle-text-color);
+  font-weight: bold;
 }
 
 .content_section {
@@ -137,8 +137,8 @@
 
 .content-images {
   display: grid;
+  gap: var(--content-gap-s);
   grid-template: repeat(5, min-content) / 1fr;
-  gap: var(--content-gap-s)
 }
 
 .image {
@@ -147,10 +147,10 @@
 }
 
 .footer {
-  display: flex;
   position: relative;
-  align-items: center;
+  display: flex;
   justify-content: center;
+  align-items: center;
   height: 100vh;
   min-height: 667px;
   padding: var(--content-padding);
@@ -171,15 +171,15 @@
   }
 
   .content-images {
-    width: 100%;
-    grid-template-rows: min-content  192px 230px 318px;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: min-content  192px 230px 318px;
     grid-template-areas: 
       "title title title"
       "sunset sunset ice-cream"
       "tape books ice-cream"
       "tape street street";
     gap: var(--content-gap-m);
+    width: 100%;
   }
 
   .image-subtitle {
@@ -248,7 +248,7 @@
   }
 
   .content-images {
-    width: 100%;
     grid-template-rows: min-content  260px 315px 433px;
+    width: 100%;
   }
 }
