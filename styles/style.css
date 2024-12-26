@@ -160,6 +160,10 @@
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
+.header__theme-menu-button_active {
+  outline: 1px solid var(--accent-color);
+}
+
 @media (width >= 768px) {
   .title-text-same-level {
     grid-template-columns: clamp(236px, 30.2vw, 315px) 1fr;
@@ -215,6 +219,11 @@
 
   .header__theme-menu-list {
     display: flex;
+  }
+
+  .header__theme-menu-item {
+    margin-inline-end: var(--content-gap-s);
+    margin-block-end: 0;
   }
 
   .title-above-text {

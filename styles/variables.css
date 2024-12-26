@@ -21,6 +21,7 @@
   --content-gap-s: 10px;
   --rec-position-top: 10px;
   --rec-position-right: 19px;
+  --button-hover-color: #FF007066 
 }
 
 @media (width >= 768px) {
