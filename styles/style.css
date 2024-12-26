@@ -8,7 +8,8 @@
 
 .header {
   display: grid;
-  grid-template: repeat(2, min-content) 1fr repeat(2, min-content) / 1fr;
+  position: relative;
+  grid-template: min-content 1fr min-content / 1fr;
   height: 100vh;
   min-height: 668px;
   padding: var(--content-padding);
@@ -44,11 +45,11 @@
 }
 
 .main-subtitle {
-  width: clamp(355px, 38vw, 491px);
+  width: var(--main-subtitle-width);
   color: var(--subtitle-text-color);
   font-weight: bold;
   justify-self: end;
-  margin-block-end: var(--main-subtitle-margin-block-end);
+  margin: var(--main-subtitle-margin);
 }
 
 .title-decor {
@@ -75,8 +76,10 @@
 }
 
 .top-decoration-lines {
+  position: absolute;
+  top: var(--content-padding);
+  right: var(--content-padding);
   display: block;
-  justify-self: end;
   border-inline-end: 1px solid var(--accent-color);
   border-block-start: 1px solid var(--accent-color);
   block-size: 25px;
@@ -84,6 +87,9 @@
 }
 
 .bottom-decoration-lines {
+  position: absolute;
+  bottom: var(--content-padding);
+  left: var(--content-padding);
   display: block;
   border-inline-start: 1px solid var(--accent-color);
   border-block-end: 1px solid var(--accent-color);
@@ -95,8 +101,6 @@
   display: grid;
   grid-template: repeat(4, min-content) / 1fr;
   gap: var(--sections-gap);
-  margin-block-start: var(--content-margin-block);
-  margin-block-end: var(--content-margin-block);
   color: var(--regular-text-color);
   padding: var(--content-padding);
 }
@@ -143,8 +147,10 @@
 }
 
 .footer {
-  display: grid;
-  grid-template: min-content 1fr min-content / 1fr;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
   min-height: 667px;
   padding: var(--content-padding);
@@ -152,8 +158,6 @@
 
 .footer-title {
   text-shadow: 2px 2px 0 var(--accent-color);
-  justify-self: center;
-  align-self: center;
 }
 
 @media (width >= 768px) {
@@ -205,6 +209,14 @@
 }
 
 @media (width >= 1024px) {
+  .header__theme-menu {
+    justify-self: center;
+  }
+
+  .header__theme-menu-list {
+    display: flex;
+  }
+
   .title-above-text {
     grid-template: repeat(3, min-content) / repeat(3, 1fr);
   }
