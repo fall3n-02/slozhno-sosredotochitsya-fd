@@ -11,11 +11,13 @@
   --bg-image: url("../images/cover-image-dark.png");
   --regular-text-color: #F1B2CE;
   --content-padding: 10px;
-  --header__theme-menu-margin: clamp(75px, 20vw, 192px);
+  --main-title-font-size: 116px;
+  --header__theme-menu-list-margin: 0 8px 0 0;
+  --header__theme-menu-margin: clamp(55px, 16.8vw, 192px) 0 0 0;
   --main-title-margin: 65px 0 55px 0;
-  --main-subtitle-margin: 0 0 clamp(66px, 17.6vw, 183px) 0;
+  --main-subtitle-margin: 0 0 clamp(46px, 15.5vw, 183px) 0;
   --main-subtitle-width: clamp(355px, 38vw, 491px);
-  --content-margin: 0 40px;
+  --content-margin: 40px 0;
   --sections-gap: 50px;
   --content-gap-m: 20px;
   --content-gap-s: 10px;
@@ -27,15 +29,18 @@
 @media (width >= 768px) {
   :root {
     --content-padding: 20px;
-    --main-title-margin: 0 0 162px 0;
-    --main-subtitle-margin: 0 0 138px 0;
-    --content-margin: 0 60px;
+    --main-title-margin: 0 0 0 0;
+    --main-subtitle-margin: 0 0 160px 0;
+    --main-subtitle-width: clamp(355px, 47vw, 491px);
+    --content-margin: 40px 0;
     --sections-gap: 80px;
     --content-gap-m: 20px;
     --content-gap-s: 10px;
-    --header__theme-menu-margin: 147px;
+    --header__theme-menu-margin: clamp(170px, 16.8vw, 192px) 0 0 0;
+    --header__theme-menu-list-margin: 0 6px 0 0;
     --rec-position-top: 20px;
     --rec-position-right: 29px;
+    --main-title-font-size: 120px;
   }
 }
 
