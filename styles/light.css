@@ -15,6 +15,7 @@
   --accent-color: #FF8DCB;
   --bg-image: url("../images/cover-image-light.png");
   --regular-text-color: var(--subtitle-text-color);
+  --button-hover-color: #32312D66;
 }
 
 @media (prefers-color-scheme: light) {
@@ -25,15 +26,41 @@
     --accent-color: #FF8DCB;
     --bg-image: url("../images/cover-image-light.png");
     --regular-text-color: var(--subtitle-text-color);
+    --button-hover-color: #32312D66;
   }
 }
 
 
-.header {
+.theme-light .header {
   background-image: var(--bg-image);
 }
 
 .theme-light .rec,
 .theme-light .rec::after{
   display: none;
+}
+
+.theme-light .top-decoration-lines,
+.theme-light .bottom-decoration-lines {
+  border-color: var(--subtitle-text-color);
+}
+
+.theme-light .header__theme-menu-button_active {
+  outline: 1px solid var(--subtitle-text-color);
+}
+
+a:hover {
+  border-bottom: 1px solid var(--subtitle-text-color);
+}
+
+.theme-light a:focus-visible {
+  outline: 1px solid var(--subtitle-text-color);
+}
+
+.theme-light button:hover {
+  outline: 1px solid var(--button-hover-color);
+}
+
+.theme-light button:focus-visible {
+  border-bottom: 1px solid var(--subtitle-text-color);
 }
