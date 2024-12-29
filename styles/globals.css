@@ -46,27 +46,7 @@ a {
   text-decoration: none;
 }
 
-a {
-  text-shadow: 1px 1px 0 var(--accent-color);
-}
-
-a:hover {
-  border-bottom: 1px solid var(--regular-text-color);
-}
-
 button:focus,
 a:focus {
   outline: none;
-}
-
-a:focus-visible {
-  outline: 1px solid var(--regular-text-color);
-}
-
-button:hover {
-  outline: 1px solid var(--button-hover-color);
-}
-
-button:focus-visible {
-  border-bottom: 1px solid var(--accent-color);
 }

@@ -20,7 +20,6 @@
   --content-gap-m: 20px;
   --content-gap-s: 10px;
 
-  --header__theme-menu-list-margin: 0 0 0 0;
   --header__theme-menu-margin: 66px 0 0 0;
   --main-title-margin: 5px 0 0 0;
   --main-subtitle-margin: 0 0 54px 0;
@@ -38,12 +37,12 @@
     --content-margin: 40px 0;
     --sections-gap: 80px;
 
-    --main-subtitle-width: 364px;
+    --main-subtitle-width: clamp(364px, 47.75vw, 491px);
     --content-title-width: 236px;
 
     --header__theme-menu-margin: 192px 20px 0 0;
-    --main-title-margin: 0px 0 0px 0;
-    --main-subtitle-margin: 0 20px 183px 0;
+    --main-title-margin: 0 0 0 0;
+    --main-subtitle-margin: 0 20px clamp(134px, 183px - 5vw, 183px) 0;
     --rec-position-top: 20px;
     --rec-position-right: 29px;
   }
