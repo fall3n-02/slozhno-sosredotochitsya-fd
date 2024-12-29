@@ -5,6 +5,10 @@
   background-color: var(--bg-color);
   background-attachment: fixed;
   line-height: 23.4px;
+  background-image: url(../images/cover-image-dark.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 
@@ -14,10 +18,6 @@
   height: 100vh;
   min-height: 668px;
   padding: var(--content-padding);
-  background-image: url(../images/cover-image-dark.png);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
   grid-template: min-content 1fr min-content / 1fr;
 }
 
@@ -84,7 +84,13 @@
   inline-size: 9px;
 }
 
-.top-decoration-lines {
+.theme-light .rec,
+.theme-light .rec::after {
+  display: none;
+}
+
+.decorated-zone::before {
+  content: "";
   position: absolute;
   top: var(--content-padding);
   right: var(--content-padding);
@@ -95,7 +101,8 @@
   inline-size: 25px;
 }
 
-.bottom-decoration-lines {
+.decorated-zone::after {
+  content: "";
   position: absolute;
   bottom: var(--content-padding);
   left: var(--content-padding);
@@ -104,6 +111,31 @@
   border-block-end: 1px solid var(--accent-color);
   block-size: 25px;
   inline-size: 25px;
+}
+
+.theme-light .decorated-zone::before,
+.theme-light .decorated-zone::after {
+  border-color: var(--subtitle-text-color);
+}
+
+.theme-light .header__theme-menu-button_active {
+  outline: 1px solid var(--subtitle-text-color);
+}
+
+.theme-light a:hover {
+  border-bottom: 1px solid var(--subtitle-text-color);
+}
+
+.theme-light a:focus-visible {
+  outline: 1px solid var(--subtitle-text-color);
+}
+
+.theme-light button:hover {
+  outline: 1px solid var(--button-hover-color);
+}
+
+.theme-light button:focus-visible {
+  border-bottom: 1px solid var(--subtitle-text-color);
 }
 
 .content {
