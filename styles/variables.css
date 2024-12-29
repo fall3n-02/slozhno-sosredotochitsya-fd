@@ -12,7 +12,7 @@
   --regular-text-color: #F1B2CE;
   --button-hover-color: #FF007066;
 
-  --main-title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --main-title-font-size: clamp(116px, 7.0115rem + 1.0178vw, 120px);
 
   --content-padding: 10px;
   --content-margin: 30px 0;
@@ -20,7 +20,7 @@
   --content-gap-m: 20px;
   --content-gap-s: 10px;
 
-  --header__theme-menu-margin: 66px 0 0 0;
+  --header__theme-menu-margin: 64px 0 0 0;
   --main-title-margin: 5px 0 0 0;
   --main-subtitle-margin: 0 0 54px 0;
   --main-subtitle-width: 355px;
@@ -31,7 +31,7 @@
 
 @media (width >= 768px) {
   :root {
-    --main-title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --main-title-font-size: clamp(120px, 0.5625rem + 14.4531vw, 157px);
 
     --content-padding: 20px;
     --content-margin: 40px 0;
@@ -42,7 +42,7 @@
 
     --header__theme-menu-margin: 192px 20px 0 0;
     --main-title-margin: 0 0 0 0;
-    --main-subtitle-margin: 0 20px clamp(134px, 183px - 5vw, 183px) 0;
+    --main-subtitle-margin: 0 20px clamp(134px, 206.04px - 3vw, 183px) 0;
     --rec-position-top: 20px;
     --rec-position-right: 29px;
   }

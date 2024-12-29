@@ -162,8 +162,6 @@ button:focus-visible {
   border-color: var(--subtitle-text-color);
 }
 
-
-
 .theme-light a:hover {
   border-bottom: 1px solid var(--subtitle-text-color);
 }
@@ -171,8 +169,6 @@ button:focus-visible {
 .theme-light a:focus-visible {
   outline: 1px solid var(--subtitle-text-color);
 }
-
-
 
 .content {
   display: grid;
@@ -196,7 +192,7 @@ button:focus-visible {
 .section {
   display: grid;
   grid-template: repeat(2, min-content) / 1fr;
-  gap: var(--content-gap-m);
+  gap: var(--content-gap-m) 0;
 }
 
 .content-info {
@@ -230,7 +226,6 @@ button:focus-visible {
   margin-bottom: 0;
 }
 
-
 .image {
   block-size: 100%;
   inline-size: 100%;
@@ -253,9 +248,14 @@ button:focus-visible {
 
 
 @media (width >=768px) {
-  .title-text-same-level {
+  .section-why,
+  .section-how {
     grid-template-columns: var(--content-title-width) 1fr;
-    column-gap: var(--content-gap-m);
+    gap: 0 var(--content-gap-m);
+  }
+
+  .section-what {
+    gap: var(--content-gap-m) 0;
   }
 
   .content-title {
