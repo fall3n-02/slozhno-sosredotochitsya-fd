@@ -12,7 +12,7 @@
   --regular-text-color: #F1B2CE;
   --button-hover-color: #FF007066;
 
-  --main-title-font-size: 116px;
+  --main-title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 
   --content-padding: 10px;
   --content-margin: 30px 0;
@@ -32,46 +32,30 @@
 
 @media (width >= 768px) {
   :root {
-    --main-title-font-size: 120px;
+    --main-title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 
     --content-padding: 20px;
     --content-margin: 40px 0;
     --sections-gap: 80px;
-    --content-gap-m: 20px;
-    --content-gap-s: 10px;
 
     --main-subtitle-width: 364px;
     --content-title-width: 236px;
 
-    --header__theme-menu-list-margin: 0 0 0 0;
     --header__theme-menu-margin: 192px 20px 0 0;
     --main-title-margin: 0px 0 0px 0;
     --main-subtitle-margin: 0 20px 183px 0;
     --rec-position-top: 20px;
     --rec-position-right: 29px;
-    --content-subtitle_subtitle-margin: 0 0 15px 0;
   }
 }
 
 @media (width >= 1024px) {
   :root {
-    --main-title-font-size: 157px;
-
-    --content-padding: 20px;
-    --content-margin: 40px 0;
-    --sections-gap: 80px;
-    --content-gap-m: 20px;
-    --content-gap-s: 10px;
-
     --main-subtitle-width: 491px;
     --content-title-width: 315px;
 
-    --header__theme-menu-list-margin: 0 0 0 0;
     --header__theme-menu-margin: 20px 0 0 10px;
     --main-title-margin: 160px 0 0px 0;
     --main-subtitle-margin: 0 20px 134px 0;
-    --rec-position-top: 20px;
-    --rec-position-right: 29px;
-    --content-subtitle_subtitle-margin: 0 0 15px 0;
   }
 }

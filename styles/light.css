@@ -34,23 +34,3 @@
     display: none;
   }
 }
-
-.theme-light .header__theme-menu-button_active {
-  outline: 1px solid var(--subtitle-text-color);
-}
-
-.theme-light a:hover {
-  border-bottom: 1px solid var(--subtitle-text-color);
-}
-
-.theme-light a:focus-visible {
-  outline: 1px solid var(--subtitle-text-color);
-}
-
-.theme-light button:hover {
-  outline: 1px solid var(--button-hover-color);
-}
-
-.theme-light button:focus-visible {
-  border-bottom: 1px solid var(--subtitle-text-color);
-}
