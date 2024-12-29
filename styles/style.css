@@ -266,17 +266,25 @@
     grid-row: 2;
   }
 
-  .title-above-text.content_section p {
+  .title-above-text.content_section .text-block {
     grid-row: 3;
   }
 
-  .title-above-text p,
-  .title-above-text h3 {
+  .title-above-text .text-block {
+    width: var(--content-title-width);
+  }
+
+  .title-above-text .text-block:not(:last-child),
+  .title-above-text .content-subtitle:not(:last-of-type) {
     margin-inline-end: var(--content-gap-m);
   }
 
   .content-images {
     grid-template-rows: min-content  260px 315px 433px;
     width: 100%;
+  }
+
+  .footer-title {
+    margin: 0;
   }
 }

@@ -55,8 +55,23 @@
 
 @media (width >= 1024px) {
   :root {
-    --main-subtitle-margin: 0 0 134px 0;
-    --header__theme-menu-margin: 0;
-    --main-subtitle-width: clamp(491px, 47vw, 692px);
+    --main-title-font-size: 157px;
+
+    --content-padding: 20px;
+    --content-margin: 40px 0;
+    --sections-gap: 80px;
+    --content-gap-m: 20px;
+    --content-gap-s: 10px;
+
+    --main-subtitle-width: 491px;
+    --content-title-width: 315px;
+
+    --header__theme-menu-list-margin: 0 0 0 0;
+    --header__theme-menu-margin: 20px 0 0 10px;
+    --main-title-margin: 160px 0 0px 0;
+    --main-subtitle-margin: 0 20px 134px 0;
+    --rec-position-top: 20px;
+    --rec-position-right: 29px;
+    --content-subtitle_subtitle-margin: 0 0 15px 0;
   }
 }
