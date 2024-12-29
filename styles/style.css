@@ -8,7 +8,6 @@
   background-image: url(../images/cover-image-dark.png);
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 .theme-light .page {
@@ -160,14 +159,6 @@ button:focus-visible {
 .theme-light .decorated-zone::before,
 .theme-light .decorated-zone::after {
   border-color: var(--subtitle-text-color);
-}
-
-.theme-light a:hover {
-  border-bottom: 1px solid var(--subtitle-text-color);
-}
-
-.theme-light a:focus-visible {
-  outline: 1px solid var(--subtitle-text-color);
 }
 
 .content {
