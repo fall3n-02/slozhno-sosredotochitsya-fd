@@ -143,11 +143,8 @@
 }
 
 .content-subtitle_subtitle {
-  margin-block-end: var(--content-gap-s);
-}
-
-.content-subtitle_subtitle {
   color: var(--subtitle-text-color);
+  margin-block-end: var(--content-gap-s);
 }
 
 .content-images {
