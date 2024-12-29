@@ -186,12 +186,16 @@
 
 @media (width >= 768px) {
   .title-text-same-level {
-    grid-template-columns: clamp(236px, 30.2vw, 315px) 1fr;
-    gap: var(--content-gap-m);
+    grid-template-columns: var(--content-title-width) 1fr;
+    column-gap: var(--content-gap-m);
   }
 
   .content-title {
-    width: clamp(236px, 30.2vw, 315px);
+    width: var(--content-title-width);
+  }
+  
+  .header {
+    padding: 0;
   }
 
   .content-images {

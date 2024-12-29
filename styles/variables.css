@@ -32,19 +32,24 @@
 
 @media (width >= 768px) {
   :root {
+    --main-title-font-size: 120px;
+
     --content-padding: 20px;
-    --main-title-margin: 0 0 0 0;
-    --main-subtitle-margin: 0 0 160px 0;
-    --main-subtitle-width: clamp(355px, 47vw, 491px);
     --content-margin: 40px 0;
     --sections-gap: 80px;
     --content-gap-m: 20px;
     --content-gap-s: 10px;
-    --header__theme-menu-margin: clamp(170px, 16.8vw, 192px) 0 0 0;
-    --header__theme-menu-list-margin: 0 6px 0 0;
+
+    --main-subtitle-width: 364px;
+    --content-title-width: 236px;
+
+    --header__theme-menu-list-margin: 0 0 0 0;
+    --header__theme-menu-margin: 192px 20px 0 0;
+    --main-title-margin: 0px 0 0px 0;
+    --main-subtitle-margin: 0 20px 183px 0;
     --rec-position-top: 20px;
     --rec-position-right: 29px;
-    --main-title-font-size: 120px;
+    --content-subtitle_subtitle-margin: 0 0 15px 0;
   }
 }
 
