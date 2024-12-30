@@ -28,8 +28,10 @@
   margin: var(--header__theme-menu-margin);
 }
 
-.header__theme-menu-item {
-  margin-block-end: var(--content-gap-s);
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--content-gap-s);
 }
 
 .header__theme-menu-button {
@@ -305,7 +307,7 @@ button:focus-visible {
   }
 
   .header__theme-menu-list {
-    display: flex;
+    flex-direction: row;
   }
 
   .header__theme-menu-item {
