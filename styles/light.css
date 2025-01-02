@@ -33,4 +33,14 @@
   .rec::after {
     display: none;
   }
+
+  .decorated-zone::before {
+    border-inline-end: 1px solid var(--subtitle-text-color);
+    border-block-start: 1px solid var(--subtitle-text-color);
+  }
+  
+  .decorated-zone::after {
+    border-inline-start: 1px solid var(--subtitle-text-color);
+    border-block-end: 1px solid var(--subtitle-text-color);
+  }
 }

@@ -5,13 +5,9 @@
   background-color: var(--bg-color);
   background-attachment: fixed;
   line-height: 23.4px;
-  background-image: url(../images/cover-image-dark.png);
+  background-image: url(--bg-image);
   background-position: center;
   background-size: cover;
-}
-
-.theme-light .page {
-  background-image: url(../images/cover-image-light.png);
 }
 
 .header {
@@ -134,6 +130,14 @@ button:focus-visible {
   display: none;
 }
 
+.theme-dark .rec {
+  display: initial;
+}
+
+.theme-dark .rec::after {
+  display: inline-block;
+}
+
 .decorated-zone::before {
   content: "";
   position: absolute;
@@ -161,6 +165,11 @@ button:focus-visible {
 .theme-light .decorated-zone::before,
 .theme-light .decorated-zone::after {
   border-color: var(--subtitle-text-color);
+}
+
+.theme-dark .decorated-zone::before,
+.theme-dark .decorated-zone::after {
+  border-color: var(--accent-color);
 }
 
 .content {
