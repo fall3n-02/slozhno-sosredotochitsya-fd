@@ -34,7 +34,7 @@
   --content-subtitle_subtitle-margin: 0 0 15px 0;
 }
 
-@media (width >=768px) {
+@media (width >= 768px) {
   :root {
     --main-title-font-size: clamp(120px, 0.5625rem + 14.4531vw, 157px);
 
@@ -46,14 +46,14 @@
     --content-title-width: 236px;
 
     --header__theme-menu-margin: 192px 20px 0 0;
-    --main-title-margin: 0 0 0 0;
-    --main-subtitle-margin: 0 20px clamp(134px, 206.04px - 3vw, 183px) 0;
+    --main-title-margin: 20px 0 0 0;
+    --main-subtitle-margin: 20px 20px clamp(134px, 206.04px - 3vw, 183px) 0;
     --rec-position-top: 20px;
     --rec-position-right: 29px;
   }
 }
 
-@media (width >=1024px) {
+@media (width >= 1024px) {
   :root {
     --main-subtitle-width: 491px;
     --content-title-width: 315px;
