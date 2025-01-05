@@ -40,7 +40,7 @@
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid var(--button-active-color);
   pointer-events: none;
 }
 
@@ -49,11 +49,11 @@ a {
 }
 
 a:hover {
-  border-bottom: 1px solid var(--regular-text-color);
+  border-bottom: 1px solid var(--link-accent-color);
 }
 
 a:focus-visible {
-  outline: 1px solid var(--regular-text-color);
+  outline: 1px solid var(--link-accent-color);
 }
 
 button:hover {
@@ -61,27 +61,7 @@ button:hover {
 }
 
 button:focus-visible {
-  border-bottom: 1px solid var(--accent-color);
-}
-
-.theme-light .header__theme-menu-button_active {
-  outline: 1px solid var(--subtitle-text-color);
-}
-
-.theme-light a:hover {
-  border-bottom: 1px solid var(--regular-text-color);
-}
-
-.theme-light a:focus-visible {
-  outline: 1px solid var(--regular-text-color);
-}
-
-.theme-light button:hover {
-  outline: 1px solid var(--button-hover-color);
-}
-
-.theme-light button:focus-visible {
-  border-bottom: 1px solid var(--subtitle-text-color);
+  border-bottom: 1px solid var(--button-focus-color);
 }
 
 .main-title {
@@ -125,27 +105,14 @@ button:focus-visible {
   inline-size: 9px;
 }
 
-.theme-light .rec,
-.theme-light .rec::after {
-  display: none;
-}
-
-.theme-dark .rec {
-  display: initial;
-}
-
-.theme-dark .rec::after {
-  display: inline-block;
-}
-
 .decorated-zone::before {
   content: "";
   position: absolute;
   top: var(--content-padding);
   right: var(--content-padding);
   display: block;
-  border-inline-end: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--decorated-zone-color);
+  border-block-start: 1px solid var(--decorated-zone-color);
   block-size: 25px;
   inline-size: 25px;
 }
@@ -156,20 +123,10 @@ button:focus-visible {
   bottom: var(--content-padding);
   left: var(--content-padding);
   display: block;
-  border-inline-start: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--decorated-zone-color);
+  border-block-end: 1px solid var(--decorated-zone-color);
   block-size: 25px;
   inline-size: 25px;
-}
-
-.theme-light .decorated-zone::before,
-.theme-light .decorated-zone::after {
-  border-color: var(--subtitle-text-color);
-}
-
-.theme-dark .decorated-zone::before,
-.theme-dark .decorated-zone::after {
-  border-color: var(--accent-color);
 }
 
 .content {
@@ -182,7 +139,7 @@ button:focus-visible {
 }
 
 .content-title {
-  color: var(--accent-color);
+  color: var(--content-title-color);
   font-weight: bold;
 }
 

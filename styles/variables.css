@@ -11,6 +11,11 @@
   --bg-image: url("../images/cover-image-dark.png");
   --regular-text-color: #F1B2CE;
   --button-hover-color: #FF007066;
+  --decorated-zone-color: #FF0070;
+  --button-active-color: #FF0070;
+  --link-accent-color: #F1B2CE;
+  --button-focus-color: #FF0070;
+  --content-title-color: #FF0070;
 
   --main-title-font-size: clamp(116px, 7.0115rem + 1.0178vw, 120px);
 
@@ -29,7 +34,7 @@
   --content-subtitle_subtitle-margin: 0 0 15px 0;
 }
 
-@media (width >= 768px) {
+@media (width >=768px) {
   :root {
     --main-title-font-size: clamp(120px, 0.5625rem + 14.4531vw, 157px);
 
@@ -48,7 +53,7 @@
   }
 }
 
-@media (width >= 1024px) {
+@media (width >=1024px) {
   :root {
     --main-subtitle-width: 491px;
     --content-title-width: 315px;

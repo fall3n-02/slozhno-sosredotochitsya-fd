@@ -15,5 +15,18 @@
   --accent-color: #FF0070;
   --bg-image: url("../images/cover-image-dark.png");
   --regular-text-color: #F1B2CE;
+  --decorated-zone-color: #FF0070;
+  --link-accent-color: #F1B2CE;
+  --button-focus-color: #FF0070;
+  --button-active-color: #FF0070;
   --button-hover-color: #FF007066;
+  --content-title-color: #FF0070;
+}
+
+.theme-dark .rec {
+  display: initial;
+}
+
+.theme-dark .rec::after {
+  display: inline-block;
 }
