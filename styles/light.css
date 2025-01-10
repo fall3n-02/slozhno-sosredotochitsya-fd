@@ -21,6 +21,7 @@
   --link-accent-color: #353430;
   --button-focus-color: #353430;
   --content-title-color: #353430;
+  --button-text-color: #353430;
 }
 
 .theme-light .rec,
@@ -42,6 +43,7 @@
     --link-accent-color: #353430;
     --button-focus-color: #353430;
     --content-title-color: #353430;
+    --button-text-color: #353430;
   }
 
   .rec,

@@ -5,7 +5,7 @@
   background-color: var(--bg-color);
   background-attachment: fixed;
   line-height: 23.4px;
-  background-image: url(--bg-image);
+  background-image: var(--bg-image);
   background-position: center;
   background-size: cover;
 }
@@ -33,7 +33,7 @@
 .header__theme-menu-button {
   width: 70px;
   border: 0;
-  color: var(--accent-color);
+  color: var(--button-text-color);
   text-transform: lowercase;
   text-align: center;
   background-color: transparent;
@@ -277,7 +277,6 @@ button:focus-visible {
   }
 
   .header__theme-menu-item {
-    margin-inline-end: var(--content-gap-s);
     margin-block-end: 0;
   }
 
